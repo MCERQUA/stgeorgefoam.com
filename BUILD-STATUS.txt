@@ -1,0 +1,128 @@
+STGEORGEFOAM.COM — BUILD STATUS
+Built by josh-desk-2@mesh (sfi-audit coder agent), time-boxed 2-hour build.
+Build completed: 2026-08-21
+
+CLASSIFICATION: TRADE — spray foam insulation contractor lead-gen site (NOT insurance).
+Location: St. George, Utah (Washington County).
+Zero insurance language confirmed via grep sweep.
+
+DOMAIN VERIFICATION
+- No local folder pre-existing. HTTP 000 both protocols (unregistered/unbuilt at start).
+- domains.db: ACTIVE, auto_renew=1, locked=1, expires 2027-05-09.
+- Real-business-name check: WebSearch for "st george spray foam insulation company utah"
+  found real operators — Southern Utah Spray Foam LLC, Tonks Insulation, Big City
+  Insulation, IDI (Insulation Distributors Inc.) — none named "St George Foam" or a close
+  variant. Brand is clear to use.
+
+SIBLING-SITE AWARENESS (important context for this build)
+Discovered mid-build that /workspace/Websites/stgeorgesprayfoam.com already exists — a
+fully-built, live-gated CCA site for the SAME city/niche (built 2026-07-31), positioned as
+a narrow "spray-foam-only specialist, residential only, nothing else" company (dark
+canyon-navy + teal palette). A second sibling, southernutahinsulation.com, is a general
+insulation contractor (light terracotta + amber palette) covering St. George + Cedar City.
+
+To avoid duplicate content / duplicate positioning across two live CCA domains in the same
+market, stgeorgefoam.com was deliberately differentiated:
+- POSITIONING: full-service spray foam company — residential AND commercial/metal-building
+  work, new installs AND spray foam removal/correction for jobs other contractors got
+  wrong. Still 100% spray-foam-material-exclusive (never fiberglass/batts/blown-in) — just
+  not narrow in scope. Two of the 8 services (Commercial & Metal Building Spray Foam, and
+  Spray Foam Removal & Correction) are NOT offered by the sibling site.
+- DESIGN: distinct "Desert Copper & Sage" light palette (copper #B5502E / sage #7A8B6F /
+  sand #FAF6EF / charcoal #2A211B) — verified via the pre-deploy-content-check palette
+  scanner as containing zero purple/pink/blue-gradient hues, and visually distinct from
+  both siblings' palettes (hex-by-hex compared before choosing).
+- CONTENT: all services/blog/FAQ copy independently authored (not reused from the sibling),
+  verified via grep sweep to contain zero mentions of the sibling's brand name/domain.
+
+SCAFFOLD ORIGIN (disclosed per house practice)
+To move fast within the 2-hour window, the Next.js project scaffold (component library,
+App Router structure, Tailwind/shadcn conventions, form/SEO plumbing) was copied from the
+sibling stgeorgesprayfoam.com and then: (a) fully re-themed (all color tokens replaced,
+new tailwind.config.ts), (b) fully re-branded (site.ts, metadata, schema), (c) fully
+re-positioned (all "specialist/nothing else" copy rewritten to full-service framing across
+every page — about, contact, quote, service-areas, FAQ, services template, footer, header),
+and (d) given entirely new service/blog/FAQ content (see CONTENT below). This is a
+copy-editing/re-theme starting point, not a content or design clone — see grep-sweep
+verification below.
+
+DESIGN PHASE — STITCH (real AI-generated, not hand-authored)
+Ran Stitch myself directly (stitch-mcp.sh) per the mandatory-Stitch rule:
+- Project: projects/4935045802739906459
+- Design system: assets/5606878918248205239 ("St George Foam - Desert Copper & Sage")
+- Model: GEMINI_3_1_PRO, deviceType DESKTOP
+- Generated 1 screen (Homepage) — downloaded to .stitch-pages/homepage.html +
+  homepage-screenshot.png. Full design-director prompt and palette rationale in
+  ai/research/design-system.md.
+DISCLOSURE: only 1 Stitch screen was generated (homepage), not one per route (11 routes
+total). This was a deliberate time-box tradeoff, not a quota failure — Stitch was
+available and responded successfully on the first attempt. The homepage screen's palette,
+type pairing (Space Grotesk / Work Sans), and section rhythm were used as the style
+contract for hand-building the remaining pages with the existing component library. The
+pre-deploy-content-check flags this as a WARN (not a FAIL): "Stitch coverage 1 screen(s)
+across 11 routes."
+
+IMAGES
+Used the fleet's shared, pre-generated, pre-optimized spray-foam image pool
+(/workspace/Websites/_sprayfoam-shared-images/, all images already under 250KB each,
+1024x576/1024x1024 JPEGs) rather than generating fresh images, again as a deliberate
+time-box tradeoff. Assigned a DIFFERENT subset/mapping than the stgeorgesprayfoam.com
+sibling uses (which draws from its own distinct webp set) so the two live sites don't
+serve byte-identical hero/service imagery. 14 images total, public/images/ = 2.2MB
+(well under the ~3-4MB budget). Icons are lucide-react only, no emoji.
+
+CONTENT
+- 8 services (attic-roof-deck, closed-cell, open-cell, exterior-wall, crawl-space,
+  garage-shop, commercial-metal-building, spray-foam-removal-correction) — ~9,100 words,
+  written by a dedicated content sub-agent against the exact site schema, independently
+  verified for zero insurance language, zero sibling-domain mentions, zero
+  ice-dam/snow-load/heating-bill framing (climate is cooling-driven only).
+- 4 blog posts (~4,000 words of body content) — cost guide, spotting a bad spray foam job
+  (ties to the removal/correction service), metal-building condensation (ties to the
+  commercial service), open-cell vs closed-cell.
+- 12 site-wide FAQs.
+- Climate facts verified: St. George elevation ~2,860 ft, IECC Climate Zone 3B, July highs
+  104-106°F, monsoon mid/late-July through early/mid-September, Rocky Mountain Power
+  (Wattsmart Homes rebate program) + Dixie Power as the utilities — same verified facts the
+  sibling site established, reused here as objective climate/utility data, not copied prose.
+
+FORMS
+Quote (3-step) + Contact forms, Netlify Forms via `data-netlify` + POST to `/__forms.html`
+decoy (matches the sibling's already-working static-export pattern). AEO traffic-source
+capture (traffic_source + landing_url hidden fields, set on mount via useEffect, declared
+in __forms.html for both forms) was MISSING from the inherited scaffold and was added
+during this build per the standing SOP requirement.
+
+BUILD RESULT
+- pnpm install: clean. pnpm-workspace.yaml declares onlyBuiltDependencies + allowBuilds for
+  sharp (pnpm 11.10.0 moved this out of package.json's "pnpm" field — package.json's
+  redundant "pnpm" block was removed after confirming the new location works).
+- next: pinned exactly 15.3.9 (not caret, not 15.3.3/15.3.6/15.3.7 — CVE-affected). react/
+  react-dom pinned 19.2.0.
+- `pnpm run build`: SUCCESS, 27 static routes exported (8 service pages, 4 blog posts, all
+  core pages, sitemap.xml, robots.txt).
+- STATIC EXPORT confirmed: next.config.ts output:'export', images.unoptimized:true,
+  netlify.toml publish="out", NO @netlify/plugin-nextjs.
+- pre-deploy-content-check.sh stgeorgefoam.com <dir>: PASS (own-keyword hits=6, palette
+  clean, scrim clean after fixing one weak hero-gradient stop from /30 to /55, git remote
+  origin set to git@github.com:MCERQUA/stgeorgefoam.com.git matches domain slug). Two WARNs
+  (non-blocking, disclosed above): Stitch coverage, and 2 blog list/detail files using
+  Image fill for card thumbnails with no dark scrim (expected — those are white-background
+  card thumbnails, not full-bleed text-over-image heroes).
+- git: initialized standalone repo, branch `main` (not master). Working tree clean, all 99
+  tracked files committed (via this container's autosave mechanism, author "Mike
+  <mike@jam-bot.com>" — the shared autosave identity, not a manual commit forgery).
+  node_modules/.next/out/.pnpm-store/tsconfig.tsbuildinfo/package-lock.json all gitignored
+  and confirmed absent from `git ls-files`.
+- Per instructions: BUILD + COMMIT ONLY, NOT PUSHED. Remote `origin` is configured
+  (git@github.com:MCERQUA/stgeorgefoam.com.git) but no push was performed.
+- No dev server was ever started for this build (build done via `pnpm run build`, not
+  `pnpm dev`) — confirmed clean via `ps aux | grep -i "next dev\|pnpm.*dev"`.
+
+PREVIEW / NEXT STEPS
+- To preview locally: `cd /workspace/Websites/stgeorgefoam.com && pnpm run build && npx serve out` (or use the website-dev-server skill).
+- To ship: push `main` to a real MCERQUA/stgeorgefoam.com GitHub repo (currently configured
+  as remote `origin` but not created/pushed), then connect Netlify.
+- Optional follow-up (not blocking): generate a Stitch screen for 1-2 more key pages
+  (Services index, a service detail page) to close the coverage WARN; generate bespoke
+  images instead of the shared pool if visual uniqueness vs. the sibling becomes a concern.
