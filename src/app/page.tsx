@@ -68,7 +68,7 @@ export default function HomePage() {
       {/* ============ HERO ============ */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <Image src="/images/hero-insulation.jpg" alt="Technician spray-applying closed-cell spray foam insulation into an attic roof deck in St. George, Utah" fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-800/92 via-charcoal-800/75 to-charcoal-800/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-800/92 via-charcoal-800/75 to-charcoal-800/55" />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-800/70 via-transparent to-transparent" />
 
         <div className="container-x relative z-10 grid gap-12 pt-28 pb-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
