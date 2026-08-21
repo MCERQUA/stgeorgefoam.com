@@ -1,0 +1,34 @@
+# St. George Foam
+
+> Washington County's full-service spray foam insulation company, serving St. George, Utah and
+> the surrounding region — open-cell and closed-cell spray foam for attics/roof decks, exterior
+> walls, crawl spaces, garages/shops, and commercial/metal buildings, plus spray foam removal and
+> correction for improperly installed prior jobs. Residential and commercial. Not a general
+> insulation shop (never fiberglass batts or blown-in) — spray foam only, full scope. Not an
+> insurance provider.
+
+Phone: 844-967-5247
+Email: josh@contractorschoiceagency.com
+Base city: St. George, UT (Washington County, hot desert climate, IECC Zone 3B). Service area:
+St. George, Washington City, Hurricane, Santa Clara, Ivins, plus the broader LaVerkin/Toquerville
+region.
+
+## Services
+- Attic & Roof Deck Spray Foam Insulation — /services/attic-roof-deck-spray-foam
+- Closed-Cell Spray Foam Insulation — /services/closed-cell-spray-foam
+- Open-Cell Spray Foam Insulation — /services/open-cell-spray-foam
+- Exterior Wall Spray Foam Insulation — /services/exterior-wall-spray-foam
+- Crawl Space Spray Foam Insulation — /services/crawl-space-spray-foam
+- Garage & Shop Spray Foam Insulation — /services/garage-shop-spray-foam
+- Commercial & Metal Building Spray Foam — /services/commercial-metal-building-spray-foam
+- Spray Foam Removal & Correction — /services/spray-foam-removal-correction
+
+## Key pages
+- Home: /
+- Services overview: /services
+- Service areas: /service-areas
+- About: /about
+- FAQ: /faq
+- Blog: /blog
+- Contact: /contact
+- Free quote: /quote

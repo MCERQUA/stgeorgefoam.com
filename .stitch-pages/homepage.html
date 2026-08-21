@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>St. George Foam - Full-Service Spray Foam Insulation</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#B5502E",
+                        "primary-hover": "#8C3D22",
+                        secondary: "#7A8B6F",
+                        sand: "#FAF6EF",
+                        stone: "#EFE6D8",
+                        charcoal: "#2A211B",
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "0.75rem", // 12px for cards as requested
+                        "2xl": "1.5rem",
+                        full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Space Grotesk", "sans-serif"],
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Work Sans", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Copper piping motif utility */
+        .copper-pipe-border {
+            border-left: 4px solid #B5502E;
+        }
+    </style>
+</head>
+<body class="bg-sand text-charcoal font-body antialiased selection:bg-primary selection:text-sand">
+<!-- 1. TopNavBar (From Shared Components JSON) -->
+<!-- Applied JSON styles: style_component_shape, style_bg_color, style_separation_logic, style_shadows_and_elevation -->
+<nav class="fixed top-0 w-full z-50 bg-[#FAF6EF] dark:bg-[#FAF6EF] border-b border-[#EFE6D8] shadow-sm">
+<!-- Applied JSON style: style_shell_layout -->
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<!-- Brand -->
+<a class="flex items-center gap-2" href="#">
+<!-- Applied JSON style: style_brand_logo -->
+<span class="text-2xl font-headline font-bold text-[#2A211B] tracking-tight">St. George Foam</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<!-- Applied JSON style: style_inactive_navigation, style_universal_hover -->
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#services">Services</a>
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#areas">Service Areas</a>
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#commercial">Commercial</a>
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#about">About</a>
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#faq">FAQ</a>
+<a class="text-[#2A211B] font-medium hover:text-[#8C3D22] transition-colors duration-200" href="#blog">Blog</a>
+</div>
+<!-- Actions -->
+<div class="hidden lg:flex items-center gap-6">
+<a class="text-[#2A211B] font-bold font-headline flex items-center gap-2 hover:text-[#B5502E] transition-colors" href="tel:8449675247">
+<span class="material-symbols-outlined">call</span>
+                    844-967-5247
+                </a>
+<a class="bg-[#B5502E] hover:bg-[#8C3D22] text-[#FAF6EF] px-6 py-2.5 rounded-full font-headline font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5" href="#quote">
+                    Get Free Quote
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-[#2A211B] p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<header class="relative pt-24 pb-32 md:pt-40 md:pb-48 overflow-hidden min-h-[921px] flex items-center">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="A highly detailed, professional photograph showcasing a skilled insulation technician in full protective gear meticulously applying expanding spray foam to the interior roof deck of a large residential attic. The scene is illuminated by bright, clear construction lighting that highlights the thick, insulating texture of the foam. The overall color grading leans towards a warm, sun-baked desert-inspired aesthetic, utilizing subtle copper and sienna tones to evoke a premium, high-quality industrial service. The mood is highly professional, clean, and capable." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBG6yNBzxXILtIoTUqt1Mwf92Fq3A0Z622rd2IQNhXGcq6D5pEuyjIFE1ABZftkZ4sQ3wiOjwhHY7h06GX0r_ZHZoAU9fWAADhqu1cQllm-Nl3QGyiCFQWAe0n0PV50lnME0Inb8aSYFqVCrTMtCp6c0NM8RYMoHSML6mUEtX1iWif096xYBkv8DxPuOSzuty4tJouos_kcO4EW2VjD6W0LZME7LA1Seo3XA1789wysuBIccWDxW-I7XRsXs-BLHG6Uvg2aL3Gw1JA')"></div>
+<!-- Copper-tinted dark scrim (left-to-right) -->
+<div class="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-transparent mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 w-full">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-sand border border-primary/30 font-label text-sm font-bold tracking-wider uppercase mb-6 backdrop-blur-sm">
+                    St. George &amp; Washington County
+                </span>
+<h1 class="font-headline font-bold text-5xl md:text-7xl text-sand leading-[1.1] mb-6 tracking-tight">
+                    Washington County’s <span class="text-primary">Full-Service</span> Spray Foam Company
+                </h1>
+<p class="font-body text-xl text-stone mb-10 max-w-2xl leading-relaxed">
+                    Residential, Commercial, &amp; Specialized Spray Foam Correction. We seal out the 110°+ heat and maximize your energy efficiency.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-12">
+<a class="bg-primary hover:bg-primary-hover text-sand px-8 py-4 rounded-xl font-headline font-bold text-lg text-center transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group" href="#quote">
+                        Get Free Quote
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="bg-transparent border-2 border-stone text-sand hover:bg-stone/10 px-8 py-4 rounded-xl font-headline font-bold text-lg text-center transition-all flex items-center justify-center gap-2 backdrop-blur-sm" href="tel:8449675247">
+<span class="material-symbols-outlined">call</span>
+                        Call Now
+                    </a>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center gap-6 text-sand/80 font-body text-sm font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined fill text-primary">verified</span>
+                        Licensed &amp; Insured
+                    </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined fill text-primary">location_on</span>
+                        Locally Owned
+                    </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined fill text-primary">star</span>
+                        5-Star Rated
+                    </div>
+</div>
+</div>
+</div>
+</header>
+<!-- 3. Stats Bar -->
+<section class="bg-stone py-12 border-b border-stone/50 relative z-20 -mt-8 mx-4 md:mx-8 rounded-2xl shadow-xl">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-charcoal/10">
+<div class="text-center px-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">thermostat</span>
+<h3 class="font-headline font-bold text-2xl text-charcoal">Maximum</h3>
+<p class="font-body text-charcoal/70 text-sm uppercase tracking-wider">R-Value</p>
+</div>
+<div class="text-center px-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">sunny</span>
+<h3 class="font-headline font-bold text-2xl text-charcoal">110°+</h3>
+<p class="font-body text-charcoal/70 text-sm uppercase tracking-wider">Beat the Heat</p>
+</div>
+<div class="text-center px-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">speed</span>
+<h3 class="font-headline font-bold text-2xl text-charcoal">1-Visit</h3>
+<p class="font-body text-charcoal/70 text-sm uppercase tracking-wider">Installation</p>
+</div>
+<div class="text-center px-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">handshake</span>
+<h3 class="font-headline font-bold text-2xl text-charcoal">15+ Yrs</h3>
+<p class="font-body text-charcoal/70 text-sm uppercase tracking-wider">Local Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Grid (Bento Style) -->
+<section class="py-24 bg-sand" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-charcoal mb-4">Comprehensive Insulation Solutions</h2>
+<p class="font-body text-lg text-charcoal/80">From residential attics to large-scale commercial facilities, we deploy high-performance closed-cell and open-cell foam systems.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 (Large) -->
+<div class="lg:col-span-2 lg:row-span-2 bg-stone rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden flex flex-col justify-end min-h-[300px]">
+<div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity" style="background-image: radial-gradient(#B5502E 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10">
+<div class="bg-primary text-sand w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-lg">
+<span class="material-symbols-outlined text-3xl">roofing</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-charcoal mb-2">Attic &amp; Roof Deck</h3>
+<p class="font-body text-charcoal/80 mb-6">Create a conditioned, unvented attic space to drastically lower cooling costs and protect HVAC ductwork from extreme heat.</p>
+<a class="inline-flex items-center text-primary font-bold hover:text-primary-hover group-hover:translate-x-2 transition-transform" href="#">
+                            Learn More <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Small Cards -->
+<div class="bg-white rounded-xl p-6 shadow-sm border border-stone/50 hover:border-primary/30 transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">hexagon</span>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-2">Closed-Cell</h3>
+<p class="font-body text-sm text-charcoal/70 mb-4">Maximum density, high R-value, acts as a vapor and moisture barrier.</p>
+<a class="inline-flex items-center text-primary text-sm font-bold" href="#"><span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-sm border border-stone/50 hover:border-primary/30 transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">cloud</span>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-2">Open-Cell</h3>
+<p class="font-body text-sm text-charcoal/70 mb-4">Excellent sound dampening and expansion for interior walls and cavities.</p>
+<a class="inline-flex items-center text-primary text-sm font-bold" href="#"><span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-sm border border-stone/50 hover:border-primary/30 transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">foundation</span>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-2">Crawl Space</h3>
+<p class="font-body text-sm text-charcoal/70 mb-4">Seal out pests, moisture, and desert dust from your home's foundation.</p>
+<a class="inline-flex items-center text-primary text-sm font-bold" href="#"><span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-sm border border-stone/50 hover:border-primary/30 transition-colors group">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">warehouse</span>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-2">Garage &amp; Shop</h3>
+<p class="font-body text-sm text-charcoal/70 mb-4">Transform unlivable hot spaces into comfortable, usable workshops year-round.</p>
+<a class="inline-flex items-center text-primary text-sm font-bold" href="#"><span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<!-- Card (Wide) -->
+<div class="lg:col-span-2 bg-white rounded-xl p-6 shadow-sm border border-stone/50 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition-shadow">
+<div class="bg-stone p-4 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">domain</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-1">Commercial &amp; Metal Buildings</h3>
+<p class="font-body text-sm text-charcoal/70">Prevent condensation and reduce HVAC loads in large steel structures and warehouses.</p>
+</div>
+<a class="md:ml-auto mt-4 md:mt-0 text-primary hover:text-primary-hover p-2 bg-stone/50 rounded-full transition-colors" href="#"><span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<!-- Card (Wide) -->
+<div class="lg:col-span-2 bg-stone/50 rounded-xl p-6 shadow-sm border border-primary/20 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="bg-sand p-4 rounded-full text-primary shadow-inner">
+<span class="material-symbols-outlined text-3xl">build_circle</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-charcoal mb-1">Spray Foam Removal &amp; Correction</h3>
+<p class="font-body text-sm text-charcoal/70">Expert remediation of improperly installed foam from previous contractors.</p>
+</div>
+<a class="md:ml-auto mt-4 md:mt-0 bg-primary text-sand px-4 py-2 rounded-lg font-bold text-sm hover:bg-primary-hover transition-colors" href="#">Learn More</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. 'Why Full-Service' Band (Sage Green) -->
+<section class="bg-secondary text-sand py-24 relative overflow-hidden">
+<!-- Abstract copper piping background detail -->
+<div class="absolute top-0 right-0 w-64 h-64 border-t-8 border-r-8 border-primary/20 rounded-tr-full transform translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 border-b-8 border-l-8 border-primary/20 rounded-bl-full transform -translate-x-1/2 translate-y-1/2"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline font-bold text-4xl text-sand mb-4">The Full-Service Advantage</h2>
+<p class="font-body text-lg text-sand/80 max-w-2xl mx-auto">Why choosing a contractor capable of both large commercial builds and precise residential corrections matters.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-20 h-20 mx-auto rounded-full bg-sand/10 flex items-center justify-center mb-6 backdrop-blur-sm border border-sand/20">
+<span class="material-symbols-outlined text-4xl text-sand">home</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Residential Care</h3>
+<p class="font-body text-sand/80 text-sm leading-relaxed">We treat your home with meticulous care, understanding that clean lines and minimal disruption are just as important as R-value.</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 mx-auto rounded-full bg-sand/10 flex items-center justify-center mb-6 backdrop-blur-sm border border-sand/20">
+<span class="material-symbols-outlined text-4xl text-sand">factory</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Commercial Scale</h3>
+<p class="font-body text-sand/80 text-sm leading-relaxed">Equipped with high-output rigs to handle massive metal buildings and commercial roofing efficiently, keeping your project on schedule.</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 mx-auto rounded-full bg-sand/10 flex items-center justify-center mb-6 backdrop-blur-sm border border-sand/20">
+<span class="material-symbols-outlined text-4xl text-sand">healing</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Expert Correction</h3>
+<p class="font-body text-sand/80 text-sm leading-relaxed">Our deep knowledge allows us to diagnose, remove, and replace poorly installed foam—a highly specialized skill few competitors possess.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. Footer (From Shared Components JSON) -->
+<!-- Applied JSON styles: style_component_shape, style_bg_color, style_separation_logic -->
+<footer class="w-full pt-16 pb-8 bg-[#2A211B] dark:bg-[#2A211B]">
+<!-- Applied JSON style: style_shell_layout -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<!-- Column 1: Brand & Copyright -->
+<div class="flex flex-col gap-6">
+<!-- Applied JSON style: style_brand_logo -->
+<span class="text-xl font-headline font-bold text-[#FAF6EF]">St. George Foam</span>
+<div class="text-[#EFE6D8]/80 font-body text-sm leading-relaxed">
+<!-- Added address from prompt constraints -->
+<p class="mb-2">12220 E Riggs Rd<br/>Chandler AZ</p>
+<p>© 2024 St. George Foam. All rights reserved. Licensed &amp; Insured. Serving St. George &amp; Chandler, AZ.</p>
+</div>
+</div>
+<!-- Column 2: Services Links (From JSON) -->
+<div>
+<h4 class="font-headline font-bold uppercase tracking-wider text-[#B5502E] mb-6">Services</h4>
+<ul class="flex flex-col gap-3">
+<!-- Applied JSON style: style_inactive_navigation, style_universal_hover -->
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Residential Insulation</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Commercial Spray Foam</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Roof Coatings</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Attic Retrofit</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Our Process</a></li>
+</ul>
+</div>
+<!-- Column 3: Service Areas (From JSON) -->
+<div>
+<h4 class="font-headline font-bold uppercase tracking-wider text-[#B5502E] mb-6">Service Areas</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">St. George, UT</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Washington City, UT</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Hurricane, UT</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Chandler, AZ</a></li>
+</ul>
+</div>
+<!-- Column 4: Company (From JSON) -->
+<div>
+<h4 class="font-headline font-bold uppercase tracking-wider text-[#B5502E] mb-6">Company</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Safety Standards</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-sm text-[#EFE6D8]/80 hover:text-[#B5502E] transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

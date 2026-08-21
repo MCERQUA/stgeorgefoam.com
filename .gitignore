@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+package-lock.json
+.netlify/
+.pnpm-store/
+tsconfig.tsbuildinfo
+
+deploy_key
+deploy_key.pub
+
+.autosave-gated
