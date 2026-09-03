@@ -16,14 +16,17 @@ type FormData = {
   areaToInsulate: string;
   squareFootage: string;
   service: string;
+  streetAddress: string;
   city: string;
+  state: string;
+  zip: string;
   timeframe: string;
   message: string;
 };
 
 const initial: FormData = {
   name: "", phone: "", email: "", propertyType: "", areaToInsulate: "",
-  squareFootage: "", service: "", city: "", timeframe: "", message: "",
+  squareFootage: "", service: "", streetAddress: "", state: "UT", zip: "", city: "", timeframe: "", message: "",
 };
 
 const STEPS = ["Your Home", "Project", "Contact"];
@@ -58,6 +61,10 @@ export function QuoteForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Only the last step may submit. A submit event raised from an earlier step — a
+    // reclassified nav button, Enter in a text field — would post a lead with no name,
+    // phone or email.
+    if (step !== STEPS.length - 1) return;
     setStatus("submitting");
     try {
       const payload: Record<string, string> = { "form-name": "quote", ...data, ...traffic };
@@ -158,6 +165,20 @@ export function QuoteForm() {
             </div>
           </div>
           <div>
+            <label className={labelCls}>Street address</label>
+            <input className={inputCls} name="streetAddress" value={data.streetAddress} onChange={(e) => set("streetAddress", e.target.value)} placeholder="Where the work would happen" />
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label className={labelCls}>State</label>
+              <input className={inputCls} name="state" value={data.state} onChange={(e) => set("state", e.target.value)} />
+            </div>
+            <div>
+              <label className={labelCls}>ZIP code</label>
+              <input className={inputCls} name="zip" value={data.zip} onChange={(e) => set("zip", e.target.value)} />
+            </div>
+          </div>
+          <div>
             <label className={labelCls}>Area to insulate</label>
             <select className={inputCls} name="areaToInsulate" value={data.areaToInsulate} onChange={(e) => set("areaToInsulate", e.target.value)}>
               <option value="">Select…</option>
@@ -231,6 +252,7 @@ export function QuoteForm() {
 
         {step < STEPS.length - 1 ? (
           <button
+            key="wizard-next"
             type="button"
             onClick={() => canNext && setStep((s) => s + 1)}
             disabled={!canNext}
@@ -239,7 +261,7 @@ export function QuoteForm() {
             Continue <ArrowRight className="h-4 w-4" />
           </button>
         ) : (
-          <button type="submit" disabled={status === "submitting"} className="btn-primary disabled:opacity-60">
+          <button key="wizard-submit" type="submit" disabled={status === "submitting"} className="btn-primary disabled:opacity-60">
             {status === "submitting" ? (
               <><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>
             ) : (
