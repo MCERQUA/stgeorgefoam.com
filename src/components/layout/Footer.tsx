@@ -80,7 +80,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} {SITE.name}. Serving St. George &amp; Washington County, Utah. All rights reserved.</p>
+          <p>© {year} {SITE.name} · A Contractors Choice Agency company. Serving St. George &amp; Washington County, Utah. All rights reserved.</p>
           <p>Open-Cell &amp; Closed-Cell Spray Foam — Residential &amp; Commercial</p>
         </div>
       </div>
